@@ -53,11 +53,57 @@ public class SimuladorCajero {
         
     
         
+        static void mostrarMenu() {
+        System.out.println("""
+                
+                [1] Consultar saldo
+                [2] Retirar dinero (comisión: 1 euro)
+                [3] Depositar dinero
+                [4] Ver estadísticas
+                [5] Salir
+                [6] Ver últimos movimientos
+                [7] Borrar historial
+                [0] Avanzar al siguiente día
+                Seleccione opción:
+                """);
+    }
+
+    static void consultarSaldo() {
+        System.out.println("Saldo actual: " + saldo + " euros");
+    }
+
+    static void retirar() {
+        System.out.print("Cantidad a retirar: ");
+        double c = leerDouble(sc);
+
+        if (c <= 0) {
+            System.out.println("Cantidad inválida.");
+            return;
+        }
+
+        if (retiradoHoy + c > LIMITE_DIARIO) {
+            System.out.println("Límite diario excedido.");
+            return;
+        }
 
 
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // esto es enunciadoooo
         // Historial
         String[] hist_t = new String[10]; // tipo
         double[] hist_m = new double[10]; // monto
