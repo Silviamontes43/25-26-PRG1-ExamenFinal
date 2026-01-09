@@ -16,17 +16,7 @@ public class SimuladorCajero {
         static double retiradoHoy = 0;
         static int operaciones = 0;
         
-        double saldo = 1000.0; // saldo
-        double si = s;
-        int numOps = 0; // num ops
-        double totalRetirado = 0; // total retirado
-        double totalDepositado = 0; // total depositado
-        
-        // Nuevas vars
-        double comision = 1.0; // comision
-        double limiteDiario = 600.0; // limite diario
-        double retiradoHoy = 0.0; // retirado hoy
-        double comisiones_totales = 0.0; // comisiones
+    
         
         // Historial
         String[] hist_t = new String[10]; // tipo
